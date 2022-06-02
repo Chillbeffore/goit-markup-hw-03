@@ -18,29 +18,27 @@
 
 <body class="body">
   <header class="header">
-    <div class="container">
-      <nav>
+    <div class="container main-nav">
+      <nav class="main-nav">
         <a class="logo link" href="/">Web <span class="logo-accent">Studio</span>
         </a>
         <ul class="nav-links">
-          <li>
+          <li class="nav-item">
             <a class="link current" href="/">Студия</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a class="link" href="./portfolio.html">Портфолио</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a class="link" href="/">Контакты</a>
           </li>
         </ul>
       </nav>
-    </div>
-    <div class="container">
       <ul class="contacts-links">
-        <li>
+        <li class="link-item">
           <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li>
+        <li class="link-item">
           <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
@@ -56,64 +54,68 @@
     <section class="second-section">
       <div class="container">
         <h2 hidden>Наши особенности</h2>
-        <ul>
-          <li>
-            <h3 class="primary-text">Внимание к деталям</h3>
-            <p class="secondary-text">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h3 class="primary-text">Пунктуальность</h3>
-            <p class="secondary-text">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h3 class="primary-text">Планирование</h3>
-            <p class="secondary-text">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <h3 class="primary-text">Современные технологии</h3>
-            <p class="secondary-text">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div class="section-list">
+          <ul class="cards-item">
+            <li>
+              <h3 class="primary-text">Внимание к деталям</h3>
+              <p class="secondary-text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+          </ul>
+          <ul class="cards-item">
+            <li>
+              <h3 class="primary-text">Пунктуальность</h3>
+              <p class="secondary-text">
+                Задача организации, в особенности же рамки и место обучения кадров
+                влечет за собой.
+              </p>
+            </li>
+          </ul>
+          <ul class="cards-item">
+            <li>
+              <h3 class="primary-text">Планирование</h3>
+              <p class="secondary-text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+          </ul>
+          <ul class="cards-item">
+            <li>
+              <h3 class="primary-text">Современные технологии</h3>
+              <p class="secondary-text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
     <section class="third-section">
       <div class="container">
         <h2 class="primary-text">Чем мы занимаемся</h2>
-        <ul>
-          <li>
-            <img src="./img/img.png" alt="верстка" width="310" />
+
+        <ul class="section-list">
+          <li class="photos">
+            <img src="./img/img.png" alt="верстка" width="370" />
           </li>
-          <li>
-            <img src="./img/img (1).png" alt="дизайн" width="310" />
+          <li class="photos">
+            <img src="./img/img (1).png" alt="дизайн" width="370" />
           </li>
-          <li>
-            <img src="./img/img (2).png" alt="внешнее оформление" width="310" />
+          <li class="photos">
+            <img src="./img/img (2).png" alt="внешнее оформление" width="370" />
           </li>
         </ul>
+
       </div>
     </section>
     <section class="fourth-section">
       <div class="container">
         <h2 class="primary-text">Наша команда</h2>
-        <ul>
+        <ul class="card-workers">
           <li class="photo-card">
             <div>
               <img src="./img/img-3.jpg" alt="работник Игорь " width="270" />
@@ -148,10 +150,10 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <a class="logo link" href="/">Web <span class="logo-accent">Studio</span>
+      <a class="footer-link" href="/">Web <span class="logo-accent">Studio</span>
       </a>
       <address>
-        <ul class="contacts-links">
+        <ul class="contact-links">
           <li>
             <a class="map-link"
               href="https://www.figma.com/exit?url=https%3A%2F%2Fbit.ly%2F3pXMvUd&fuid=1108490379115779092"
