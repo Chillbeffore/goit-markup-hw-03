@@ -14,7 +14,7 @@ p {
 /* цвета основного текста #757575*/
 /*вторичный цвет  текста #212121 */
 /* синий #2196F3 */
-/*  */
+/*  порфолио цвет #E5E5E5*/
 
 :root {
   --primary-text-color: #757575;
@@ -23,6 +23,7 @@ p {
   --white-color: #ffffff;
   --footer-color: #2f303a;
   --grey-color: #f5f4fa;
+  --porfolio-color: #e5e5e5;
 }
 * {
   text-decoration: none;
@@ -63,7 +64,7 @@ ul {
   font-size: 26px;
   line-height: 31px;
   display: block;
-  margin-right: 50px;
+  margin-right: 93px;
 }
 
 .logo-accent {
@@ -78,6 +79,7 @@ ul {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  padding-left: 0px;
 }
 
 .nav-links .link {
@@ -259,6 +261,8 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 .footer .footer-link {
+  width: 145px;
+
   display: inline-block;
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -288,8 +292,22 @@ ul {
   margin-bottom: 9px;
 }
 /* Portfolio */
+/* .main {
+  background-color: var(--porfolio-color); */
+
 .buttons {
   margin-bottom: 50px;
+  margin-top: 94px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+.buttons .section-buttons {
+  display: inline-block;
+}
+.buttons .section-buttons + .section-buttons {
+  margin-left: 8px;
 }
 .button-one {
   display: block;
@@ -423,9 +441,13 @@ ul {
 .card .photo-cards {
   width: 370px;
 }
-
+.card .photo-cards {
+  margin-left: 15px;
+}
 .cards {
   margin-bottom: 94px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .card .card-text {
   color: var(--primary-text-color);
