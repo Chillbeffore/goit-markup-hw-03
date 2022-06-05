@@ -334,7 +334,8 @@ section {
 .footer .logo-accent {
   color: var(--white-color);
 }
-.footer .map-link {
+
+.links .map-link {
   display: inline-block;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -343,8 +344,11 @@ section {
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
-.contact-links .link {
+.contact-links .links {
   margin-bottom: 9px;
+}
+.contact-links .links:last-child {
+  margin-bottom: 0px;
 }
 
 /* Portfolio */
@@ -503,9 +507,12 @@ section {
   letter-spacing: 0.06em;
   margin: 20px 24px 0px 24px;
 }
+
 .work-cards {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
+
 .cards {
   margin-top: 0px;
   padding-left: 0px;
@@ -526,6 +533,9 @@ section {
   display: flex;
   flex-wrap: wrap;
 }
+.cards .card-title {
+  margin: 0px;
+}
 .cards .card-text {
   color: var(--primary-text-color);
   width: 322px;
@@ -534,5 +544,5 @@ section {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  margin: 4px 24px 20px 24px;
+  margin: 0px;
 }
