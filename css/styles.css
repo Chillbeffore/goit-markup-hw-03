@@ -344,7 +344,7 @@ section.card {
 .button-one {
   display: block;
   font-family: inherit;
-  background-color: var(--white-color);
+  background-color: var(--grey-color);
   color: var(--secondary-text-color);
   cursor: pointer;
   width: 73px;
@@ -373,7 +373,7 @@ section.card {
 .button-two {
   display: block;
   font-family: inherit;
-  background-color: var(--white-color);
+  background-color: var(--grey-color);
   color: var(--secondary-text-color);
   cursor: pointer;
   width: 128px;
@@ -396,7 +396,7 @@ section.card {
 .button-three {
   display: block;
   font-family: inherit;
-  background-color: var(--white-color);
+  background-color: var(--grey-color);
   color: var(--secondary-text-color);
   cursor: pointer;
   width: 145px;
@@ -419,7 +419,7 @@ section.card {
 .button-four {
   display: block;
   font-family: inherit;
-  background-color: var(--white-color);
+  background-color: var(--grey-color);
   color: var(--secondary-text-color);
   cursor: pointer;
   width: 103px;
@@ -442,7 +442,7 @@ section.card {
 .button-five {
   display: block;
   font-family: inherit;
-  background-color: var(--white-color);
+  background-color: var(--grey-color);
   color: var(--secondary-text-color);
   cursor: pointer;
   font-weight: 500;
