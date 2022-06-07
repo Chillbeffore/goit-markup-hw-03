@@ -261,6 +261,13 @@ section {
 
   text-align: center;
 }
+.fourth-section .secondary-text {
+  margin: 0px;
+}
+.fourth-section .ternary-text {
+  margin-bottom: 10px;
+}
+
 .fourth-section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -519,7 +526,8 @@ section {
 }
 .cards .photo-cards {
   margin-right: 30px;
-  width: 370px;
+  max-width: 370px;
+  height: auto;
   margin-bottom: 30px;
 }
 .cards .photo-cards:nth-child(3n) {
