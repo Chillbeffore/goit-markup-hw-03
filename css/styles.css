@@ -359,6 +359,14 @@ section {
   letter-spacing: 0.03em;
   color: var(--white-color);
 }
+.links .map-link:hover,
+.links .map-link:focus {
+  color: var(--accent-color);
+}
+.links .link:hover,
+.links .link:focus {
+  color: var(--accent-color);
+}
 .contact-links .links {
   margin-bottom: 9px;
 }
@@ -515,8 +523,6 @@ section {
 }
 .cards .card-title {
   color: var(--secondary-text-color);
-  width: 322px;
-  height: 36px;
   font-weight: 700;
   font-size: 18px;
   line-height: 36px;
@@ -543,7 +549,7 @@ section {
   max-width: 100%;
   height: auto;
 }
-.cards .photo-cards:nth-last-child(3n) {
+.cards .photo-cards:nth-child(3n) {
   margin-right: 0px;
 }
 .cards .photo-cards:nth-last-child(-n + 3) {
@@ -559,8 +565,6 @@ section {
 }
 .cards .card-text {
   color: var(--primary-text-color);
-  width: 322px;
-  height: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
