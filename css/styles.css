@@ -24,6 +24,8 @@ p {
   --footer-color: #2f303a;
   --grey-color: #f5f4fa;
   --porfolio-color: #e5e5e5;
+  --icon-color: #afb1b8;
+  --fotter-soc: rgba(255, 255, 255, 0.1);
 }
 * {
   text-decoration: none;
@@ -152,7 +154,20 @@ section {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 210px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/hero-photo.jpg");
+  background-position: center;
+  background-size: cover;
 }
+
 .first-section .section-text {
   text-transform: uppercase;
   color: var(--white-color);
@@ -193,6 +208,33 @@ section {
 }
 .cards-item {
   width: 270px;
+}
+.cards-item::before {
+  display: block;
+  content: "";
+
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: var(--grey-color);
+  margin-bottom: 30px;
+}
+.icon-antenna::before {
+  background-image: url(../img/antenna.svg);
+  background-size: 66px 70px;
+}
+.icon-clock::before {
+  background-image: url(../img/clock.svg);
+  background-size: 66px 70px;
+}
+.icon-diagram::before {
+  background-image: url(../img/diagram.svg);
+  background-size: 70px 70px;
+}
+.icon-astronaut::before {
+  background-image: url(../img/astronaut.svg);
+  background-size: 66px 70px;
 }
 .cards-list {
   display: flex;
@@ -321,12 +363,85 @@ section {
   letter-spacing: 0.03em;
   text-align: center;
 }
+.masters-soc-list {
+  display: flex;
+}
+.masters-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+}
+.masters-soc-item:first-child {
+  margin-left: 0;
+}
+.masters-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.masters-soc-link:hover,
+.masters-soc-link:focus {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
+}
+.masters-soc-link:hover .masters-soc-icon,
+.masters-soc-link:focus .masters-soc-icon {
+  fill: var(--white-color);
+}
+
+.masters-soc-icon {
+  fill: var(--icon-color);
+}
+.five-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.five-section .primary-text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.company-cards-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+.company-card-item {
+  width: 170px;
+  height: 92px;
+  margin-left: 30px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.company-card-item:first-child {
+  margin-left: 0;
+}
+.company-cards-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.company-card-icon {
+  fill: var(--icon-color);
+}
+.company-cards-link:hover .company-card-icon,
+.company-cards-link:focus .company-card-icon {
+  fill: var(--accent-color);
+}
 /* Footer */
 
 .footer {
   background-color: var(--footer-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.subsection {
+  display: flex;
 }
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
@@ -373,7 +488,55 @@ section {
 .contact-links .links:last-child {
   margin-bottom: 0px;
 }
-
+.fotter-contacts {
+  width: 215px;
+}
+.footer-soc {
+  padding-top: 20px;
+  margin-left: 70px;
+}
+.fotter-primary-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+.fotter-masters-soc-list {
+  padding: 0;
+  display: flex;
+}
+.fotter-masters-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+  background-color: var(--fotter-soc);
+  border-radius: 50%;
+}
+.fotter-masters-soc-item:first-child {
+  margin-left: 0;
+}
+.fotter-masters-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.fotter-masters-soc-icon {
+  fill: var(--icon-color);
+}
+.fotter-masters-soc-link:hover .fotter-masters-soc-icon,
+.fotter-masters-soc-link:focus .fotter-masters-soc-icon {
+  fill: var(--white-color);
+}
+.fotter-masters-soc-link:hover,
+.fotter-masters-soc-link:focus {
+  background-color: var(--accent-color);
+}
 /* Portfolio */
 /* .main {
   background-color: var(--porfolio-color); */
